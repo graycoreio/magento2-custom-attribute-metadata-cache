@@ -1,0 +1,60 @@
+{
+    "name": "graycore/magento2-custom-attribute-metadata-cache",
+    "description": "A Magento 2 module that enables caching for customAttributeMetadata in GraphQL",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damien Retzinger",
+            "email": "damienwebdev@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php test",
+        "unit-test": "vendor/bin/phpunit ./Test/Unit",
+        "test:unit": "vendor/bin/phpunit ./Test/Unit",
+        "lint": "phpcs . --standard=Magento2 --ignore='vendor/*'",
+        "post-install-cmd": [
+            "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+        ],
+        "post-update-cmd": [
+            "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+        ]
+    },
+    "archive": {
+        "exclude": [
+            "/docs",
+            "/Test",
+            "README.md"
+        ]
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Graycore\\CustomAttributeMetadataCache\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    },
+    "require": {
+        "magento/module-eav-graph-ql": "^100.4"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": true
+        }
+    }
+}
