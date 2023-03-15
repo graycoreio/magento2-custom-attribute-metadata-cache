@@ -10,7 +10,12 @@ class CacheIdentityTest extends \PHPUnit\Framework\TestCase
 
     public function testItWorks(): void
     {
-        $identity = new CacheIdentity();
+        $om = new \Magento\Framework\TestFramework\Unit\Helper\ObjectManager($this);
+        $identity = new CacheIdentity(
+            $om->getObject(\Magento\Eav\Model\ResourceModel\Entity\Attribute\CollectionFactory::class),
+            $om->getObject(\Magento\Eav\Model\Config::class),
+
+        );
 
         $this->assertTrue($identity instanceof IdentityInterface);
     }
