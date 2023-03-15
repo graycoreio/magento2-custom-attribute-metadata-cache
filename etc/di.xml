@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Magento\Framework\GraphQlSchemaStitching\Reader" type="Magento\Framework\GraphQlSchemaStitching\Common\Reader">
+        <arguments>
+            <argument name="readers" xsi:type="array">
+                <item name="custom_attribute_metadata_cache_graphql_reader" xsi:type="object">Graycore\CustomAttributeMetadataCache\Model\GraphQlReader</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
