@@ -1,0 +1,13 @@
+{
+  "pull-request-title-pattern": "chore: release ${version}",
+  "packages": {
+    ".": {
+      "include-v-in-tag": true,
+      "changelog-path": "CHANGELOG.md",
+      "draft": false,
+      "prerelease": false,
+      "release-type": "php"
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

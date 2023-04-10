@@ -1,0 +1,17 @@
+name: Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          token: ${{ secrets.GRAYCORE_GITHUB_TOKEN }}
+          release-type: php
+          command: manifest
+          default-branch: main
