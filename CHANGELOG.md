@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/compare/v0.2.0...v0.2.1) (2023-04-10)
+
+
+### Bug Fixes
+
+* **eav, graphql:** add cacheable: true override ([555fa59](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/commit/555fa595284bc77bd93e35093038ee89e4d939f7))
+
 ## [0.2.0](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/compare/v0.1.0...v0.2.0) (2023-04-10)
 
 
