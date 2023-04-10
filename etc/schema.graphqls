@@ -1,0 +1,6 @@
+# Copyright © Magento, Inc. All rights reserved.
+# See https://github.com/mage-os/mageos-magento2/blob/2.4-develop/COPYING.txt for license details.
+
+type Query {
+        customAttributeMetadata(attributes: [AttributeInput!]! ): CustomAttributeMetadata @cache(cacheIdentity: "Graycore\\CustomAttributeMetadataCache\\Model\\CacheIdentity")
+}
