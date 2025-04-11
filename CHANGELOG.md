@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.0](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/compare/v0.2.1...v1.0.0) (2025-04-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* archive project
+
+### Features
+
+* archive project ([5c869e7](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/commit/5c869e77fc81136783833e301e05cf4875ad3722))
+
+
+### Bug Fixes
+
+* fix a bad package ref ([a30d1a4](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/commit/a30d1a46b53c61dbb217ca25b69164a4b91ecaef))
+
 ## [0.2.1](https://github.com/graycoreio/magento2-custom-attribute-metadata-cache/compare/v0.2.0...v0.2.1) (2023-04-10)
 
 
