@@ -32,7 +32,7 @@
         ]
     },
     "require": {
-        "magento/module-eav-graph-ql": ">100.4 <=100.4.4"
+        "magento/module-eav-graph-ql": ">100.4 <100.4.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
